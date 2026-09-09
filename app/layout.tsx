@@ -1,7 +1,20 @@
+// xnglo/app/layout.tsx
 import type { Metadata } from "next";
 import "./globals.css";
 
-import { xng52font, eng52font, binaryfont, korian52font, russian52font, xv38fontid, xp38fontid, xo38fontid, xb38fontid, xg38fontid, xk38fontid, xj38fontid, xt38fontid, xm38fontid, xs38fontid  } from '@/components/hsciifp/varfonts';
+import { 
+  hindixv38font, 
+  bengalixb38font, 
+  eNgliSxe38font, 
+  guzrajixg38font, 
+  jeluguxj38font, 
+  knRaxk38font, 
+  mlyalxmxm38font, 
+  oriyaxo38font, 
+  pnzabixp38font, 
+  sinhlaxs38font, 
+  tmilxt38font 
+} from '@/components/hsciifp/varfonts';
 import LocalFontPicker from "@/components/hsciifp/LocalFontPicker";
 
 export const metadata: Metadata = {
@@ -12,17 +25,16 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={
-			`${xng52font.variable} ${eng52font.variable} ${binaryfont.variable} ${korian52font.variable} ${russian52font.variable} ${xv38fontid.variable} ${xb38fontid.variable} ${xo38fontid.variable} ${xp38fontid.variable} ${xg38fontid.variable} ${xj38fontid.variable} ${xk38fontid.variable} ${xs38fontid.variable} ${xm38fontid.variable} ${xt38fontid.variable}`
-		}>
+      `${hindixv38font.variable} ${bengalixb38font.variable} ${eNgliSxe38font.variable} ${guzrajixg38font.variable} ${jeluguxj38font.variable} ${knRaxk38font.variable} ${mlyalxmxm38font.variable} ${oriyaxo38font.variable} ${pnzabixp38font.variable} ${sinhlaxs38font.variable} ${tmilxt38font.variable}`
+    }>
       <head>
       </head>
       <body>
-		  <header>
-			  <LocalFontPicker/>
-		  </header>
-		  <main>{children}</main>
-	  </body>
+        <header>
+          <LocalFontPicker/>
+        </header>
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
-

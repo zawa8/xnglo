@@ -1,25 +1,21 @@
+// LocalFontPicker.tsx
 'use client';
 
 import { useEffect, useState } from 'react';
 
 const LOCAL_FONTS = [
   // please do not change order
-  { id: 'binaryfont', name: 'binary(01)', variable: 'var(--binaryfont)' },
-  { id: 'eng52font', name: 'e52', variable: 'var(--eng52font)' },
-  { id: 'xng52font', name: 'xNgloiNgliS', variable: 'var(--xng52font)' },
-  { id: 'xv38fontid', name: 'xNglovinqi', variable: 'var(--xv38fontid)' },
-  { id: 'xb38fontid', name: 'xNglobNgali', variable: 'var(--xb38fontid)' },
-  { id: 'xj38fontid', name: 'xNglojelugu', variable: 'var(--xj38fontid)' },
-  { id: 'xk38fontid', name: 'xNgloknRa', variable: 'var(--xk38fontid)' },
-  { id: 'xp38fontid', name: 'xNglopnzabi', variable: 'var(--xp38fontid)' },
-  { id: 'xm38fontid', name: 'xNglomlyalxm', variable: 'var(--xk38fontid)' },
-  { id: 'xo38fontid', name: 'xNglooriya', variable: 'var(--xo38fontid)' },
-  { id: 'xg38fontid', name: 'xNgloguzraji', variable: 'var(--xg38fontid)' },
-  { id: 'xt38fontid', name: 'xNglotmil', variable: 'var(--xt38fontid)' },
-  { id: 'xs38fontid', name: 'xNglosinvla', variable: 'var(--xs38fontid)' },
-  /////
-  { id: 'korian52font', name: 'korian52', variable: 'var(--korian52font)' },
-  { id: 'russian52font', name: 'russian52', variable: 'var(--russian52font)' },
+  { id: 'hindixv38font', name: 'xNglovinqi (hindixv38)', variable: 'var(--hindixv38font)' },
+  { id: 'bengalixb38font', name: 'xNglobNgali (bengalixb38)', variable: 'var(--bengalixb38font)' },
+  { id: 'eNgliSxe38font', name: 'xNgloiNgliS (eNgliSxe38)', variable: 'var(--eNgliSxe38font)' },
+  { id: 'guzrajixg38font', name: 'xNgloguzraji (guzrajixg38)', variable: 'var(--guzrajixg38font)' },
+  { id: 'jeluguxj38font', name: 'xNglojelugu (jeluguxj38)', variable: 'var(--jeluguxj38font)' },
+  { id: 'knRaxk38font', name: 'xNgloknRa (knRaxk38)', variable: 'var(--knRaxk38font)' },
+  { id: 'mlyalxmxm38font', name: 'xNglomlyalxm (mlyalxmxm38)', variable: 'var(--mlyalxmxm38font)' },
+  { id: 'oriyaxo38font', name: 'xNglooriya (oriyaxo38)', variable: 'var(--oriyaxo38font)' },
+  { id: 'pnzabixp38font', name: 'xNglopnzabi (pnzabixp38)', variable: 'var(--pnzabixp38font)' },
+  { id: 'sinhlaxs38font', name: 'xNglosinvla (sinhlaxs38)', variable: 'var(--sinhlaxs38font)' },
+  { id: 'tmilxt38font', name: 'xNglotmil (tmilxt38)', variable: 'var(--tmilxt38font)' },
 ];
 
 export default function LocalFontPicker() {
